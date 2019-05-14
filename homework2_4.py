@@ -1,5 +1,7 @@
-a = 29
-b = 4
-c = 5
+# Найти результат выражения для произвольных значений a,b,c: (a - b * c ) / ( a + b ) % c
+import random
+a = random.randint(1, 99)
+b = random.randint(1, 99)
+c = random.randint(1, 99)
 answer = (a - b * c) / (a + b) % c
-print("The answer is:", answer)
+print("If a = {0}, b = {1} and c = {2}.".format(a, b, c), "\nThe answer is: {0:.2f}".format(answer))
